@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy Delights Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #fffaf3; color: #333; }
+    header { background: #ff6f00; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    header h1 { font-size: 26px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { height: 85vh; background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+    .hero h2 { font-size: 50px; margin-bottom: 10px; }
+    .hero p { font-size: 20px; margin-bottom: 20px; }
+    .btn { background: #ff6f00; color: #fff; padding: 12px 25px; border: none; border-radius: 30px; text-decoration: none; display: inline-block; }
+    .btn:hover { background: #e66000; }
+
+    section { padding: 70px 40px; }
+    .section-title { text-align: center; margin-bottom: 40px; font-size: 32px; color: #ff6f00; }
+
+    .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .menu-item { background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; }
+    .menu-item img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+    .menu-item h3 { margin-bottom: 5px; }
+    .menu-item span { color: #ff6f00; font-weight: bold; }
+
+    .about { max-width: 900px; margin: auto; text-align: center; line-height: 1.7; font-size: 18px; }
+
+    .info-boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+    .info-box { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; }
+
+    .contact-form { max-width: 500px; margin: auto; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    .contact-form button { width: 100%; padding: 12px; background: #ff6f00; color: #fff; border: none; border-radius: 30px; cursor: pointer; }
+
+    .map { width: 100%; height: 300px; border-radius: 15px; border: none; margin-top: 30px; }
+
+    .floating-buttons { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .float-btn { padding: 12px 18px; border-radius: 50px; color: #fff; text-decoration: none; font-weight: 600; }
+    .call { background: #28a745; }
+    .whatsapp { background: #25d366; }
+
+    footer { background: #1a1a1a; color: #fff; text-align: center; padding: 25px; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yummy Delights</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <div>
+      <h2>Welcome to Yummy Delights</h2>
+      <p>Where every bite makes you smile 😋</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </div>
+
+  <section id="menu">
+    <h2 class="section-title">Our Special Menu</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1601924582975-7e1f1a2a6b6a" />
+        <h3>Cheese Pizza</h3>
+        <p>Loaded with extra cheese</p>
+        <span>₹299</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" />
+        <h3>Veg Burger</h3>
+        <p>Fresh & crispy</p>
+        <span>₹199</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" />
+        <h3>Pasta</h3>
+        <p>Italian style creamy pasta</p>
+        <span>₹249</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" />
+        <h3>Chocolate Cake</h3>
+        <p>Soft & rich</p>
+        <span>₹149</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>At Yummy Delights, we believe food is not just about taste, it's about experience. We serve fresh, hygienic, and delicious meals prepared by expert chefs. Our cozy ambiance makes every visit special.</p>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <h3>📍 Our Address</h3>
+          <p>MG Road, Guwahati, Assam, India</p>
+        </div>
+        <div class="info-box">
+          <h3>⏰ Opening Hours</h3>
+          <p>Mon–Sun: 10 AM – 11 PM</p>
+        </div>
+        <div class="info-box">
+          <h3>📞 Contact</h3>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+
+      <iframe class="map" src="https://www.google.com/maps?q=Guwahati&output=embed"></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button onclick="submitForm()">Send Message</button>
+    </div>
+  </section>
+
+  <div class="floating-buttons">
+    <a href="tel:+919876543210" class="float-btn call">📞 Call</a>
+    <a href="https://wa.me/919876543210" target="_blank" class="float-btn whatsapp">💬 WhatsApp</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Yummy Delights Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm() {
+      alert("Thank you for contacting Yummy Delights! We'll get back to you soon.");
+    }
+  </script>
+</body>
+</
